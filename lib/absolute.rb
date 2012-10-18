@@ -2,17 +2,35 @@ module Absolute
 
   module App
 
+    module Response
+
+      class << self
+
+        def each( &block )
+
+          yield 'absolute'
+
+        end
+
+        def length
+
+          'absolute'.length
+
+        end
+
+      end
+
+    end
+
     class << self
 
       def call( env )
 
-        response = "absolute"
-
         headers = {}
-        headers['Content-Length'] = response.length.to_s
+        headers['Content-Length'] = Response.length.to_s
         headers['Content-Type'] = "text/html"
 
-        [200, headers, response]
+        [200, headers, Response]
 
       end
 
