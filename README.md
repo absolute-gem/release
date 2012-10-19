@@ -6,6 +6,7 @@ absolute.gem
 
 ### install absolute gem
 
+<pre>gem install sinatra</pre>
 <pre>gem install absolute</pre>
 
 Experiment 1
@@ -14,7 +15,7 @@ Experiment 1
 ### make a [Rack](http://rack.github.com/) (usually `config.ru`) file with:
 
 <pre>
-
+require 'sinatra'
 require 'absolute'
 
 Absolute::post_received do |data|
