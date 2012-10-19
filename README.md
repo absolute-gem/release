@@ -23,7 +23,7 @@ Absolute::post_received do |data|
     # data is the post body
     #
 
-    STDERR << "\n\nDID YOU: #{data}\n\n" 
+    puts "\n\nDID YOU: #{data}\n\n" 
 
 end
 
