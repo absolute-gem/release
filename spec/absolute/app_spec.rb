@@ -1,18 +1,18 @@
 require 'spec_helper'
 
-Absolute::post do |data|; end
+Absolute::post_received do |data|; end
 
 describe Absolute::App do
 
   it 'yields posted data' do
 
-    Absolute::instance_variable_get(:@block).should_receive( 
+    Absolute::instance_variable_get(:@post_block).should_receive( 
 
       :yield ).with( { "data" => "Alfven wave" } 
 
     )
 
-    post '/post/endpoint', { 
+    post '/', { 
 
       data: 'Alfven wave' 
 

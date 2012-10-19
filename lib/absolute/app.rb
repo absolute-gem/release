@@ -2,15 +2,15 @@ module Absolute
 
   class << self
 
-    def block
+    def post_block
 
-      @block
+      @post_block
 
     end
 
-    def post( *args, &block )
+    def post_received( *args, &block )
 
-      @block = block
+      @post_block = block
 
     end
 
@@ -18,11 +18,13 @@ module Absolute
 
   class App < Sinatra::Base
 
-    post '/post/endpoint' do
+    post '/' do
 
       request.body.rewind
 
-      Absolute::block.yield JSON.parse( request.body.read )
+      Absolute::post_block.yield JSON.parse( request.body.read )
+
+      [200, 'okgood']
 
     end
 
