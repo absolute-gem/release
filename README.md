@@ -6,7 +6,6 @@ absolute.gem
 
 ### install absolute gem
 
-<pre>gem install sinatra</pre>
 <pre>gem install absolute</pre>
 
 Experiment 1
@@ -15,7 +14,6 @@ Experiment 1
 ### make a [Rack](http://rack.github.com/) (usually `config.ru`) file with:
 
 <pre>
-require 'sinatra'
 require 'absolute'
 
 Absolute::post_received do |data|
@@ -34,7 +32,7 @@ run Absolute::App
 
 ### start the rack (up)
 
-<pre>rackup config.ru
+<pre>rackup config.ru</pre>
 
 ### post a spot of json 
 
