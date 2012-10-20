@@ -3,6 +3,27 @@ absolute.gem
 
 ### absolute is just getting started...
 
+What is absolute.gem
+--------------------
+
+Absolute provides a boilerplate near zero config base layer for web applications
+
+### Including:
+
+* Login and authentication integration
+* Registration and subscription services
+
+
+Why?
+----
+
+Becase we dont like doing things 2wice.
+
+
+Absolute has only just begun
+----------------------------
+
+The current version only does this:
 
 ### install absolute gem
 
@@ -41,4 +62,3 @@ run Absolute::App
 curl -i -X POST -d '{"c":"this"}' http://localhost:9292
 
 </pre>
-
