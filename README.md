@@ -1,8 +1,6 @@
 absolute.gem
 ============
 
-### absolute is just getting started...
-
 What is absolute.gem
 --------------------
 
@@ -19,9 +17,7 @@ Why?
 
 Becase we dont like doing things 2wice.
 
-
-Absolute has only just begun
-----------------------------
+### Absolute has only just begun
 
 The current version only does this:
 
@@ -29,8 +25,7 @@ The current version only does this:
 
 <pre>gem install absolute</pre>
 
-Experiment 1
-------------
+### Experiment 1
 
 ### make a [Rack](http://rack.github.com/) (usually `config.ru`) file with:
 
